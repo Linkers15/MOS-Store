@@ -1,4 +1,4 @@
-DEF_APP apidocs "API Docs" fa-book-journal-whills bg-indigo-500 core
+DEF_APP apidocs "API Docs" fa-book-journal-whills bg-indigo-500
             ON_LAUNCH
                 VAR $isNew = SYS_IS_NEW_INSTANCE ""
                 IF $isNew == false
@@ -100,8 +100,12 @@ DEF_APP apidocs "API Docs" fa-book-journal-whills bg-indigo-500 core
                 UI_HTML "SYS_ERASE_DATA \"\""
                 UI_HTML "</code></div>"
 
-                UI_CONTENT_END
-                UI_RENDER ""
-            END_LAUNCH
-        END_APP
+                // 7. NETWORK
+                UI_HTML "<div class='mos-card border-l-4 border-l-cyan-500'><h3 class='font-bold text-lg mb-2'>7. Network (GitHub)</h3>"
+                UI_HTML "<p class='text-xs mb-2 text-gray-500'>Download APIs or Raw code files.</p>"
+                UI_HTML "<code class='block bg-gray-100 dark:bg-gray-800 p-2 rounded text-xs text-cyan-600 dark:text-cyan-300 font-mono leading-relaxed'>"
+                UI_HTML "SYS_FETCH_JSON $data \"https://raw.github...\"<br>"
+                UI_HTML "SYS_FETCH_TEXT $code \"https://raw.github...\"<br>"
+                UI_HTML "</code></div>"
+
 
