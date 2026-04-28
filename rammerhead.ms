@@ -1,4 +1,4 @@
-DEF_APP id "Browser" fa-icon bg-orange-200
+DEF_APP id "Browser" fa-globe bg-orange-200
   ON_LAUNCH
   UI_HEADER "RammerHead Browser"
   UI_CONTENT_START
