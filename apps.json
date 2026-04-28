@@ -12,5 +12,12 @@
     "icon": "fa-book-journal-whills",
     "color": "bg-blue-500",
     "url": "https://raw.githubusercontent.com/Linkers15/MOS-Store/refs/heads/main/APIDocs.ms"
+  },
+  {
+    "name": "RammerHead",
+    "desc": "An iframe supported Proxy Browser",
+    "icon": "fa-icon",
+    "color": "bg-orange-300",
+    "url": "https://raw.githubusercontent.com/Linkers15/MOS-Store/refs/heads/main/rammerhead.ms"
   }
 ]
