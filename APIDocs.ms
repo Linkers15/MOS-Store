@@ -1,16 +1,14 @@
-        DEF_APP apidocs "API Docs" fa-book-journal-whills bg-indigo-500 core
+DEF_APP apidocs "API Docs" fa-book-journal-whills bg-indigo-500 core
             ON_LAUNCH
                 VAR $isNew = SYS_IS_NEW_INSTANCE ""
                 IF $isNew == false
                     SYS_RETURN ""
                 END_IF
 
-
                 UI_HEADER "MScript Mastery Guide"
                 UI_CONTENT_START
-               
+                
                 UI_HTML "<p class='mb-4 text-sm text-gray-600 dark:text-gray-300'>Welcome! MScript is the OS's native language. Every app is built with it. Here are all the commands you can use:</p>"
-
 
                 // 1. APP LIFECYCLE
                 UI_HTML "<div class='mos-card border-l-4 border-l-purple-500'><h3 class='font-bold text-lg mb-2'>1. App Lifecycle</h3>"
@@ -32,7 +30,6 @@
                 UI_HTML "END_APP"
                 UI_HTML "</code></div>"
 
-
                 // 2. UI BUILDER
                 UI_HTML "<div class='mos-card border-l-4 border-l-blue-500'><h3 class='font-bold text-lg mb-2'>2. UI Builder</h3>"
                 UI_HTML "<p class='text-xs mb-2 text-gray-500'>Commands to draw on the screen. Must call UI_RENDER at the end.</p>"
@@ -48,7 +45,6 @@
                 UI_HTML "UI_RENDER \"\""
                 UI_HTML "</code></div>"
 
-
                 // 3. VARIABLES & DATA
                 UI_HTML "<div class='mos-card border-l-4 border-l-green-500'><h3 class='font-bold text-lg mb-2'>3. Variables & Data</h3>"
                 UI_HTML "<p class='text-xs mb-2 text-gray-500'>Store data using VAR. Access it with $. Read UI inputs.</p>"
@@ -60,7 +56,6 @@
                 UI_HTML "VAR $user = CREATE_OBJ \"name\" \"Bob\" \"age\" 22<br>"
                 UI_HTML "</code></div>"
 
-
                 // 4. MATH & LOGIC
                 UI_HTML "<div class='mos-card border-l-4 border-l-yellow-500'><h3 class='font-bold text-lg mb-2'>4. Math & Logic</h3>"
                 UI_HTML "<code class='block bg-gray-100 dark:bg-gray-800 p-2 rounded text-xs text-yellow-600 dark:text-yellow-300 font-mono leading-relaxed'>"
@@ -71,7 +66,6 @@
                 UI_HTML "END_IF<br>"
                 UI_HTML "// Operators: ==, !=, >, <"
                 UI_HTML "</code></div>"
-
 
                 // 5. ARRAYS
                 UI_HTML "<div class='mos-card border-l-4 border-l-orange-500'><h3 class='font-bold text-lg mb-2'>5. Lists (Arrays)</h3>"
@@ -86,7 +80,6 @@
                 UI_HTML "&nbsp;&nbsp;UI_HTML \"${$item}\"<br>"
                 UI_HTML "END_MAP"
                 UI_HTML "</code></div>"
-
 
                 // 6. STORAGE & SYSTEM
                 UI_HTML "<div class='mos-card border-l-4 border-l-red-500'><h3 class='font-bold text-lg mb-2'>6. Storage & System</h3>"
@@ -109,7 +102,6 @@
                 UI_HTML "SYS_ERASE_DATA \"\""
                 UI_HTML "</code></div>"
 
-
                 // 7. NETWORK
                 UI_HTML "<div class='mos-card border-l-4 border-l-cyan-500'><h3 class='font-bold text-lg mb-2'>7. Network (GitHub)</h3>"
                 UI_HTML "<p class='text-xs mb-2 text-gray-500'>Download APIs or Raw code files.</p>"
@@ -118,9 +110,7 @@
                 UI_HTML "SYS_FETCH_TEXT $code \"https://raw.github...\"<br>"
                 UI_HTML "</code></div>"
 
-
                 UI_CONTENT_END
                 UI_RENDER ""
             END_LAUNCH
         END_APP
-
