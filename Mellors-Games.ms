@@ -1,4 +1,4 @@
-DEF_APP id "Games" fa-code bg-color
+DEF_APP id "Games" fa-gamepad bg-green-200
   ON_LAUNCH
   UI_HEADER "Mellors Games"
   UI_CONTENT_START
