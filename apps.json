@@ -16,7 +16,7 @@
   {
     "name": "RammerHead",
     "desc": "An iframe supported Proxy Browser",
-    "icon": "fa-icon",
+    "icon": "fa-globe",
     "color": "bg-orange-300",
     "url": "https://raw.githubusercontent.com/Linkers15/MOS-Store/refs/heads/main/rammerhead.ms"
   }
