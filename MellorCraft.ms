@@ -2,7 +2,7 @@ DEF_APP id "Craft" fa-gamepad bg-green-200
   ON_LAUNCH
   UI_HEADER "MellorCraft"
   UI_CONTENT_START
-  UI_HTML "<!DOCTYPE html>
+  UI_HTML_BLOCK <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -3573,7 +3573,8 @@ DEF_APP id "Craft" fa-gamepad bg-green-200
         requestAnimationFrame(loop);
     </script>
 </body>
-</html>"
+</html>
+END_HTML
   UI_CONTENT_END
   UI_RENDER ""
   END_LAUNCH
