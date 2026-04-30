@@ -1,10 +1,10 @@
 [
   {
-    "name": "Mellors Games",
-    "desc": "Gaming WebView for MOS Emulator",
+    "name": "MellorCraft",
+    "desc": "Offline mobile Minecraft Clone",
     "icon": "fa-gamepad",
     "color": "bg-green-300",
-    "url": "https://raw.githubusercontent.com/Linkers15/MOS-Store/refs/heads/main/Mellors-Games.ms"
+    "url": "https://raw.githubusercontent.com/Linkers15/MOS-Store/refs/heads/main/MellorCraft.ms"
   },
   {
     "name": "API Docs",
